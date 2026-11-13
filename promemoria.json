@@ -8,8 +8,8 @@
       "titolo": "⚠️ TYRANT! ⚠️",
       "messaggio": "Esce il tiranno!",
       "data": "2026-11-13",
-      "ora": "8",
-      "minuti": "00",
+      "ora": "9",
+      "minuti": "5",
       "anticipo_min": 10,
       "ripeti": "mai"
     },
@@ -19,8 +19,8 @@
       "titolo": "⚠️ TY! ⚠️",
       "messaggio": "Esce il tiranno!",
       "data": "2026-11-13",
-      "ora": "8",
-      "minuti": "0",
+      "ora": "9",
+      "minuti": "10",
       "anticipo_min": 10,
       "ripeti": "mai"
     },
