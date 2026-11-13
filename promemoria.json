@@ -4,7 +4,7 @@
   "promemoria": [
     {
       "id": "1",
-      "attivo": false,
+      "attivo": true,
       "titolo": "⚠️ TYRANT! ⚠️",
       "messaggio": "Esce il tiranno!",
       "data": "2026-11-13",
