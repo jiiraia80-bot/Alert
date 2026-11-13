@@ -71,12 +71,12 @@
     {
       "id": "7",
       "attivo": false,
-      "titolo": "",
+      "titolo": "Siege of the zoomies",
       "messaggio": "",
       "data": "",
       "ora": "",
       "minuti": "",
-      "anticipo_min": 0,
+      "anticipo_min": 10,
       "ripeti": "mai"
     },
     {
