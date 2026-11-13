@@ -5,12 +5,12 @@
     {
       "id": "1",
       "attivo": false,
-      "titolo": "Esempio: Tiranno",
+      "titolo": "⚠️ TYRANT! ⚠️",
       "messaggio": "Esce il tiranno!",
-      "data": "2026-11-20",
-      "ora": "18",
-      "minuti": "30",
-      "anticipo_min": 30,
+      "data": "2026-11-13",
+      "ora": "06",
+      "minuti": "45",
+      "anticipo_min": 10,
       "ripeti": "mai"
     },
     {
