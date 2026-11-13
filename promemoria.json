@@ -26,12 +26,12 @@
     },
     {
       "id": "3",
-      "attivo": false,
-      "titolo": "",
-      "messaggio": "",
-      "data": "",
-      "ora": "",
-      "minuti": "",
+      "attivo": true,
+      "titolo": "🤘🏻TEST 🤘🏻",
+      "messaggio": "Suucaaa!",
+      "data": "2026-11-13",
+      "ora": "09",
+      "minuti": "42",
       "anticipo_min": 0,
       "ripeti": "mai"
     },
