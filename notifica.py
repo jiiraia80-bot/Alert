@@ -79,7 +79,7 @@ def componi(r, evento, anticipo):
     if str(r.get("messaggio", "")).strip():
         righe.append(str(r["messaggio"]).strip())
     if anticipo:
-        righe.append(f"⏳ {anticipo} min")
+        righe.append(f"⏳ Start: {anticipo} min")
     return "\n".join(righe)
 
 
