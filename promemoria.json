@@ -1,0 +1,171 @@
+{
+  "fuso_orario": "Europe/Rome",
+  "tolleranza_ritardo_min": 30,
+  "promemoria": [
+    {
+      "id": "1",
+      "attivo": false,
+      "titolo": "Esempio: Tiranno",
+      "messaggio": "Esce il tiranno!",
+      "data": "2026-11-20",
+      "ora": "18",
+      "minuti": "30",
+      "anticipo_min": 30,
+      "ripeti": "mai"
+    },
+    {
+      "id": "2",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "3",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "4",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "5",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "6",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "7",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "8",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "9",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "10",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "11",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "12",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "13",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "14",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    },
+    {
+      "id": "15",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "",
+      "ora": "",
+      "minuti": "",
+      "anticipo_min": 0,
+      "ripeti": "mai"
+    }
+  ]
+}
