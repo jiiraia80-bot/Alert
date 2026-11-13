@@ -1,6 +1,6 @@
 {
   "fuso_orario": "Europe/Rome",
-  "tolleranza_ritardo_min": 30,
+  "tolleranza_ritardo_min": 0,
   "promemoria": [
     {
       "id": "1",
