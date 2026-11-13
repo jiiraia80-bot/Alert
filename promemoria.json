@@ -82,12 +82,12 @@
     {
       "id": "8",
       "attivo": false,
-      "titolo": "",
+      "titolo": "Duke",
       "messaggio": "",
-      "data": "",
+      "data": "2026-11-20",
       "ora": "",
       "minuti": "",
-      "anticipo_min": 0,
+      "anticipo_min": 10,
       "ripeti": "mai"
     },
     {
