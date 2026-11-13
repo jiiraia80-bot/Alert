@@ -93,24 +93,24 @@
     {
       "id": "9",
       "attivo": false,
-      "titolo": "",
+      "titolo": "🤼  ARENA  🤼",
       "messaggio": "",
       "data": "",
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "ogni giorno"
     },
     {
       "id": "10",
       "attivo": false,
-      "titolo": "",
+      "titolo": "🤼  ARENA  🤼",
       "messaggio": "",
-      "data": "",
-      "ora": "",
-      "minuti": "",
-      "anticipo_min": 0,
-      "ripeti": "mai"
+      "data": "2026-11-16",
+      "ora": "02",
+      "minuti": "45",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana"
     },
     {
       "id": "11",
