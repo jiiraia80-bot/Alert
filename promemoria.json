@@ -9,8 +9,8 @@
       "messaggio": "Esce il tiranno!",
       "data": "2026-11-13",
       "ora": "9",
-      "minuti": "5",
-      "anticipo_min": 10,
+      "minuti": "7",
+      "anticipo_min": 0,
       "ripeti": "mai"
     },
     {
@@ -21,7 +21,7 @@
       "data": "2026-11-13",
       "ora": "9",
       "minuti": "10",
-      "anticipo_min": 10,
+      "anticipo_min": 0,
       "ripeti": "mai"
     },
     {
