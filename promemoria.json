@@ -15,28 +15,6 @@
     },
     {
       "id": "2",
-      "attivo": false,
-      "titolo": "⚠️ TY! ⚠️",
-      "messaggio": "Esce il tiranno!",
-      "data": "2026-11-13",
-      "ora": "09",
-      "minuti": "35",
-      "anticipo_min": 0,
-      "ripeti": "mai"
-    },
-    {
-      "id": "3",
-      "attivo": false,
-      "titolo": "🤘🏻TEST 🤘🏻",
-      "messaggio": "",
-      "data": "2026-11-13",
-      "ora": "10",
-      "minuti": "40",
-      "anticipo_min": 10,
-      "ripeti": "mai"
-    },
-    {
-      "id": "4",
       "attivo": true,
       "titolo": "🔔  Canyon Clash  🔔",
       "messaggio": "Team 2",
@@ -47,10 +25,32 @@
       "ripeti": "ogni settimana"
     },
     {
-      "id": "5",
+      "id": "3",
       "attivo": true,
       "titolo": "🔔  Canyon Clash. 🔔",
       "messaggio": "Team 1",
+      "data": "2026-11-14",
+      "ora": "02",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana"
+    },
+    {
+      "id": "4",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
+      "data": "2026-11-13",
+      "ora": "21",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana"
+    },
+    {
+      "id": "5",
+      "attivo": false,
+      "titolo": "",
+      "messaggio": "",
       "data": "2026-11-14",
       "ora": "02",
       "minuti": "00",
