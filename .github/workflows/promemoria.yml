@@ -1,0 +1,45 @@
+name: Promemoria
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"      # ogni 5 minuti (e' il minimo di GitHub; l'orario non e' preciso al secondo)
+  workflow_dispatch:           # permette di avviarlo a mano dalla scheda Actions
+    inputs:
+      prova:
+        description: "Manda solo un messaggio di prova"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write              # serve per salvare stato.json
+
+concurrency:
+  group: promemoria
+  cancel-in-progress: false
+
+jobs:
+  invia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Controlla e manda i promemoria
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          PROVA: ${{ github.event.inputs.prova }}
+        run: python3 notifica.py
+
+      - name: Salva lo stato (solo se e' cambiato)
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain stato.json)" ]; then
+            git config user.name "promemoria-bot"
+            git config user.email "promemoria-bot@users.noreply.github.com"
+            git add stato.json
+            git commit -m "stato promemoria"
+            git pull --rebase
+            git push
+          fi
