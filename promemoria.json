@@ -11,7 +11,8 @@
       "ora": "21",
       "minuti": "00",
       "anticipo_min": 10,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "2",
@@ -22,7 +23,8 @@
       "ora": "21",
       "minuti": "00",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "3",
@@ -33,7 +35,8 @@
       "ora": "02",
       "minuti": "00",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "4",
@@ -44,7 +47,8 @@
       "ora": "03",
       "minuti": "10",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "5",
@@ -55,7 +59,8 @@
       "ora": "11",
       "minuti": "10",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "6",
@@ -66,7 +71,8 @@
       "ora": "19",
       "minuti": "10",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "7",
@@ -77,7 +83,8 @@
       "ora": "19",
       "minuti": "00",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "8",
@@ -88,29 +95,39 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 10,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "9",
-      "attivo": false,
+      "attivo": true,
       "titolo": "🤼  ARENA  🤼",
       "messaggio": "",
-      "data": "",
-      "ora": "",
-      "minuti": "",
-      "anticipo_min": 0,
-      "ripeti": "ogni giorno"
+      "data": "2026-11-14",
+      "ora": "03",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "giorni",
+      "giorni": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "10",
-      "attivo": false,
+      "attivo": true,
       "titolo": "🤼  ARENA  🤼",
       "messaggio": "",
       "data": "2026-11-16",
       "ora": "02",
       "minuti": "45",
       "anticipo_min": 10,
-      "ripeti": "ogni settimana"
+      "ripeti": "ogni settimana",
+      "giorni": []
     },
     {
       "id": "11",
@@ -121,7 +138,8 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "12",
@@ -132,7 +150,8 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "13",
@@ -143,7 +162,8 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "14",
@@ -154,7 +174,8 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     },
     {
       "id": "15",
@@ -165,7 +186,8 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 0,
-      "ripeti": "mai"
+      "ripeti": "mai",
+      "giorni": []
     }
   ]
 }
