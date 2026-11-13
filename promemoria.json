@@ -4,13 +4,13 @@
   "promemoria": [
     {
       "id": "1",
-      "attivo": false,
+      "attivo": true,
       "titolo": "⚠️ TYRANT! ⚠️",
-      "messaggio": "tiranno 15 minuti!",
-      "data": "2026-11-13",
-      "ora": "09",
-      "minuti": "33",
-      "anticipo_min": 0,
+      "messaggio": "",
+      "data": "2026-11-15",
+      "ora": "21",
+      "minuti": "00",
+      "anticipo_min": 10,
       "ripeti": "mai"
     },
     {
@@ -37,25 +37,25 @@
     },
     {
       "id": "4",
-      "attivo": false,
-      "titolo": "",
-      "messaggio": "",
-      "data": "",
-      "ora": "",
-      "minuti": "",
-      "anticipo_min": 0,
-      "ripeti": "mai"
+      "attivo": true,
+      "titolo": "🔔  Canyon Clash  🔔",
+      "messaggio": "Team 2",
+      "data": "2026-11-13",
+      "ora": "21",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana"
     },
     {
       "id": "5",
-      "attivo": false,
-      "titolo": "",
-      "messaggio": "",
-      "data": "",
-      "ora": "",
-      "minuti": "",
-      "anticipo_min": 0,
-      "ripeti": "mai"
+      "attivo": true,
+      "titolo": "🔔  Canyon Clash. 🔔",
+      "messaggio": "Team 1",
+      "data": "2026-11-14",
+      "ora": "02",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana"
     },
     {
       "id": "6",
