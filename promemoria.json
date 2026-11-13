@@ -4,7 +4,7 @@
   "promemoria": [
     {
       "id": "1",
-      "attivo": true,
+      "attivo": false,
       "titolo": "⚠️ TYRANT! ⚠️",
       "messaggio": "tiranno 15 minuti!",
       "data": "2026-11-13",
@@ -15,7 +15,7 @@
     },
     {
       "id": "2",
-      "attivo": true,
+      "attivo": false,
       "titolo": "⚠️ TY! ⚠️",
       "messaggio": "Esce il tiranno!",
       "data": "2026-11-13",
@@ -26,7 +26,7 @@
     },
     {
       "id": "3",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🤘🏻TEST 🤘🏻",
       "messaggio": "",
       "data": "2026-11-13",
