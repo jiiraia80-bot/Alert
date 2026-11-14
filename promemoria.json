@@ -12,6 +12,7 @@
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -24,6 +25,7 @@
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -36,6 +38,7 @@
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -48,6 +51,7 @@
       "minuti": "10",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -60,6 +64,7 @@
       "minuti": "10",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -72,6 +77,7 @@
       "minuti": "10",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -84,6 +90,7 @@
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -96,6 +103,7 @@
       "minuti": "",
       "anticipo_min": 10,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -108,6 +116,7 @@
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "giorni",
+      "etichetta": "Closes in",
       "giorni": [
         1,
         2,
@@ -127,6 +136,7 @@
       "minuti": "45",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
+      "etichetta": "Closes in",
       "giorni": []
     },
     {
@@ -139,6 +149,7 @@
       "minuti": "00",
       "anticipo_min": 20,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -151,6 +162,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -163,6 +175,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -175,6 +188,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -187,6 +201,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -199,6 +214,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -211,6 +227,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -223,6 +240,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -235,6 +253,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -247,6 +266,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -259,6 +279,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -271,6 +292,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -283,6 +305,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -295,6 +318,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -307,6 +331,7 @@
       "minuti": "",
       "anticipo_min": 0,
       "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     }
   ]
