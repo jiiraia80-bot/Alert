@@ -57,11 +57,22 @@ def istanza_corrente(r, adesso, tolleranza):
     """
     L'evento a cui riferirsi adesso.
     - 'mai': sempre la data scritta.
+    - 'giorni': il prossimo giorno scelto (Lu=0 ... Do=6) alla stessa ora.
     - ripetuto: la prima occorrenza (data + k*passo) che non e' ancora trascorsa (tolleranza compresa).
     """
     t0 = parse_evento(r)
     if t0 is None:
         return None
+    if str(r.get("ripeti", "mai")).strip().lower() == "giorni":
+        giorni = {int(g) for g in r.get("giorni", []) if str(g).isdigit() and 0 <= int(g) <= 6}
+        if not giorni:
+            return t0
+        da = max(t0, adesso - tolleranza)
+        for k in range(9):
+            cand = datetime.datetime.combine(da.date() + datetime.timedelta(days=k), t0.time())
+            if cand >= da and cand.weekday() in giorni:
+                return cand
+        return t0
     passo = PASSO_GIORNI.get(str(r.get("ripeti", "mai")).strip().lower(), 0)
     if not passo:
         return t0
