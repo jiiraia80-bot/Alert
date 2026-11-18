@@ -19,8 +19,8 @@
       "id": "2",
       "attivo": true,
       "titolo": "🔔  Canyon Clash  🔔",
-      "messaggio": "Team 2",
-      "data": "2026-11-13",
+      "messaggio": "Team 1",
+      "data": "2026-11-20",
       "ora": "21",
       "minuti": "00",
       "anticipo_min": 10,
@@ -30,7 +30,7 @@
     },
     {
       "id": "3",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🔔  Canyon Clash. 🔔",
       "messaggio": "Team 1",
       "data": "2026-11-14",
@@ -43,7 +43,7 @@
     },
     {
       "id": "4",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🧙🏻‍♀️  Countess 1  🧙🏻‍♀️",
       "messaggio": "",
       "data": "2026-11-18",
@@ -154,7 +154,7 @@
     },
     {
       "id": "12",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🧌  GARGOYLE  🧌",
       "messaggio": "",
       "data": "2026-11-16",
@@ -167,7 +167,7 @@
     },
     {
       "id": "13",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🧌  GARGOYLE  🧌",
       "messaggio": "",
       "data": "2026-11-16",
@@ -180,7 +180,7 @@
     },
     {
       "id": "14",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🧌  GARGOYLE  🧌",
       "messaggio": "",
       "data": "2026-11-16",
@@ -193,7 +193,7 @@
     },
     {
       "id": "15",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🏛  GLORY WAR  🏛",
       "messaggio": "",
       "data": "2026-11-17",
