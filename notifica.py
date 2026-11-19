@@ -115,6 +115,8 @@ def da_inviare(config, stato, adesso):
         invio = ev - datetime.timedelta(minutes=anticipo)
         if stato.get(rid) == ev.isoformat():
             continue
+        if str(r.get("salta", "")) == ev.isoformat():
+            continue
         if invio <= adesso <= invio + tol:
             pronti.append((rid, componi(r, ev, anticipo), ev.isoformat()))
     return pronti
