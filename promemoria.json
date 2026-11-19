@@ -62,19 +62,6 @@
       "giorni": []
     },
     {
-      "id": "2",
-      "attivo": false,
-      "titolo": "🔔  Canyon Clash  🔔",
-      "messaggio": "Team 1",
-      "data": "2026-11-20",
-      "ora": "21",
-      "minuti": "00",
-      "anticipo_min": 10,
-      "ripeti": "ogni settimana",
-      "etichetta": "Start in",
-      "giorni": []
-    },
-    {
       "id": "3",
       "attivo": true,
       "titolo": "🔔  Canyon Clash. 🔔",
@@ -88,11 +75,24 @@
       "giorni": []
     },
     {
+      "id": "2",
+      "attivo": false,
+      "titolo": "🔔  Canyon Clash  🔔",
+      "messaggio": "Team 1",
+      "data": "2026-11-20",
+      "ora": "21",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana",
+      "etichetta": "Start in",
+      "giorni": []
+    },
+    {
       "id": "11",
       "attivo": true,
       "titolo": "🏛  WAR ON THE CAPITAL  🏛",
       "messaggio": "",
-      "data": "2026-11-14",
+      "data": "2026-11-21",
       "ora": "15",
       "minuti": "00",
       "anticipo_min": 20,
