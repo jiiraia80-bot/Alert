@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Promemoria su Telegram / Discord, eseguito da GitHub Actions ogni 5 minuti.
+Promemoria su Telegram / Discord, eseguito da GitHub Actions (avviato ogni minuto da cron-job.org).
 
 - Legge  promemoria.json  (i promemoria) e  stato.json  (cosa e' gia' stato inviato).
 - Se e' arrivato il momento di un promemoria (evento - "anticipo" minuti) manda il messaggio.
@@ -13,6 +13,7 @@ import os
 import sys
 import json
 import math
+import time
 import datetime
 import urllib.request
 import urllib.parse
@@ -122,47 +123,58 @@ def da_inviare(config, stato, adesso):
     return pronti
 
 
+class ErroreHTTP(RuntimeError):
+    def __init__(self, codice, dettaglio):
+        super().__init__(f"HTTP {codice} {dettaglio}")
+        self.codice = codice
+
+
 def post(url, corpo, tipo):
     req = urllib.request.Request(url, data=corpo, headers={"Content-Type": tipo, "User-Agent": "promemoria-actions/1.0"})
     try:
-        with urllib.request.urlopen(req, timeout=20) as r:
+        with urllib.request.urlopen(req, timeout=10) as r:
             return r.status
     except urllib.error.HTTPError as e:
         try:
             dettaglio = e.read().decode("utf-8", "replace")[:200]
         except Exception:
             dettaglio = ""
-        raise RuntimeError(f"HTTP {e.code} {dettaglio}") from None
+        raise ErroreHTTP(e.code, dettaglio) from None
+
+
+def prova_post(nome, url, corpo, tipo, tentativi=3):
+    """Manda il messaggio e riprova se la destinazione ha un problema momentaneo. True se riuscito."""
+    for n in range(1, tentativi + 1):
+        try:
+            post(url, corpo, tipo)
+            print(f"  {nome} OK" + (f" (al tentativo {n})" if n > 1 else ""))
+            return True
+        except Exception as e:
+            print(f"  {nome} ERRORE (tentativo {n}/{tentativi}): {e}")
+            codice = getattr(e, "codice", None)
+            if codice is not None and 400 <= codice < 500 and codice != 429:
+                break                      # errore di configurazione (token, chat, webhook): riprovare non serve
+            if n < tentativi:
+                time.sleep(2 * n)
+    return False
 
 
 def invia(testo):
-    """Manda il messaggio a Telegram e/o Discord. True se almeno una destinazione ha funzionato."""
+    """Manda il messaggio a Discord e/o Telegram. Ritorna (almeno_uno_ok, tutti_ok)."""
     token = os.environ.get("TELEGRAM_TOKEN", "").strip()
     chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
     discord = os.environ.get("DISCORD_WEBHOOK_URL", "").strip()
     base = os.environ.get("TELEGRAM_API_BASE", "https://api.telegram.org")
-    ok, tentate = False, 0
+    esiti = []
+    if discord:                            # Discord per primo: se Telegram e' lento il messaggio e' gia' arrivato
+        esiti.append(prova_post("Discord", discord, json.dumps({"content": testo}).encode("utf-8"), "application/json"))
     if token and chat:
-        tentate += 1
-        try:
-            post(f"{base}/bot{token}/sendMessage",
-                 urllib.parse.urlencode({"chat_id": chat, "text": testo}).encode(),
-                 "application/x-www-form-urlencoded")
-            print("  Telegram OK")
-            ok = True
-        except Exception as e:
-            print(f"  Telegram ERRORE: {e}")
-    if discord:
-        tentate += 1
-        try:
-            post(discord, json.dumps({"content": testo}).encode("utf-8"), "application/json")
-            print("  Discord OK")
-            ok = True
-        except Exception as e:
-            print(f"  Discord ERRORE: {e}")
-    if not tentate:
+        esiti.append(prova_post("Telegram", f"{base}/bot{token}/sendMessage",
+                                urllib.parse.urlencode({"chat_id": chat, "text": testo}).encode(),
+                                "application/x-www-form-urlencoded"))
+    if not esiti:
         print("  Nessuna destinazione: mancano i Secrets (TELEGRAM_TOKEN + TELEGRAM_CHAT_ID, oppure DISCORD_WEBHOOK_URL)")
-    return ok
+    return any(esiti), bool(esiti) and all(esiti)
 
 
 def main():
@@ -179,8 +191,8 @@ def main():
 
     if os.environ.get("PROVA", "").lower() in ("1", "true", "si", "yes"):
         print("Messaggio di PROVA")
-        ok = invia(f"✅ Prova: i promemoria da GitHub funzionano.\n🕒 {adesso:%d/%m/%Y %H:%M}")
-        sys.exit(0 if ok else 1)
+        ok, tutti = invia(f"✅ Prova: i promemoria da GitHub funzionano.\n🕒 {adesso:%d/%m/%Y %H:%M}")
+        sys.exit(0 if tutti else 1)
 
     pronti = da_inviare(config, stato, adesso)
     if not pronti:
@@ -189,15 +201,16 @@ def main():
     falliti = 0
     for rid, testo, istanza in pronti:
         print(f"Invio promemoria [{rid}]")
-        if invia(testo):
-            stato[rid] = istanza           # segnato come inviato solo se almeno una destinazione ha risposto
-        else:
-            falliti += 1
+        ok, tutti = invia(testo)
+        if ok:
+            stato[rid] = istanza           # segnato come inviato se almeno una destinazione ha risposto
+        if not tutti:
+            falliti += 1                   # il run diventa rosso e GitHub ti manda l'email
     with open(FILE_STATO, "w", encoding="utf-8") as f:
         json.dump(stato, f, ensure_ascii=False, indent=2, sort_keys=True)
         f.write("\n")
     if falliti:
-        sys.exit(1)                        # il run risulta fallito: GitHub ti manda una mail e al prossimo giro riprova
+        sys.exit(1)
 
 
 if __name__ == "__main__":
