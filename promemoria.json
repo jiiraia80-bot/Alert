@@ -16,6 +16,52 @@
       "giorni": []
     },
     {
+      "id": "7",
+      "attivo": true,
+      "titolo": "🧟‍♂️  Siege of the zoomies  🧟‍♂️",
+      "messaggio": "",
+      "data": "2026-11-16",
+      "ora": "19",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana",
+      "etichetta": "Start in",
+      "giorni": []
+    },
+    {
+      "id": "9",
+      "attivo": true,
+      "titolo": "🤼  ARENA  🤼",
+      "messaggio": "",
+      "data": "2026-11-14",
+      "ora": "03",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "giorni",
+      "etichetta": "Closes in",
+      "giorni": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "10",
+      "attivo": true,
+      "titolo": "🤼  ARENA  🤼",
+      "messaggio": "",
+      "data": "2026-11-16",
+      "ora": "02",
+      "minuti": "45",
+      "anticipo_min": 10,
+      "ripeti": "ogni settimana",
+      "etichetta": "Closes in",
+      "giorni": []
+    },
+    {
       "id": "2",
       "attivo": false,
       "titolo": "🔔  Canyon Clash  🔔",
@@ -39,6 +85,32 @@
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
       "etichetta": "Start in",
+      "giorni": []
+    },
+    {
+      "id": "11",
+      "attivo": true,
+      "titolo": "🏛  WAR ON THE CAPITAL  🏛",
+      "messaggio": "",
+      "data": "2026-11-14",
+      "ora": "15",
+      "minuti": "00",
+      "anticipo_min": 20,
+      "ripeti": "mai",
+      "etichetta": "Start in",
+      "giorni": []
+    },
+    {
+      "id": "15",
+      "attivo": false,
+      "titolo": "🏛  GLORY WAR  🏛",
+      "messaggio": "",
+      "data": "2026-11-17",
+      "ora": "21",
+      "minuti": "00",
+      "anticipo_min": 10,
+      "ripeti": "mai",
+      "etichetta": "Start",
       "giorni": []
     },
     {
@@ -81,19 +153,6 @@
       "giorni": []
     },
     {
-      "id": "7",
-      "attivo": true,
-      "titolo": "🧟‍♂️  Siege of the zoomies  🧟‍♂️",
-      "messaggio": "",
-      "data": "2026-11-16",
-      "ora": "19",
-      "minuti": "00",
-      "anticipo_min": 10,
-      "ripeti": "ogni settimana",
-      "etichetta": "Start in",
-      "giorni": []
-    },
-    {
       "id": "8",
       "attivo": false,
       "titolo": "🧛🏻‍♂️  Duke  🧛🏻‍♂️",
@@ -102,52 +161,6 @@
       "ora": "",
       "minuti": "",
       "anticipo_min": 10,
-      "ripeti": "mai",
-      "etichetta": "Start in",
-      "giorni": []
-    },
-    {
-      "id": "9",
-      "attivo": true,
-      "titolo": "🤼  ARENA  🤼",
-      "messaggio": "",
-      "data": "2026-11-14",
-      "ora": "03",
-      "minuti": "00",
-      "anticipo_min": 10,
-      "ripeti": "giorni",
-      "etichetta": "Closes in",
-      "giorni": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "id": "10",
-      "attivo": true,
-      "titolo": "🤼  ARENA  🤼",
-      "messaggio": "",
-      "data": "2026-11-16",
-      "ora": "02",
-      "minuti": "45",
-      "anticipo_min": 10,
-      "ripeti": "ogni settimana",
-      "etichetta": "Closes in",
-      "giorni": []
-    },
-    {
-      "id": "11",
-      "attivo": true,
-      "titolo": "🏛  WAR ON THE CAPITAL  🏛",
-      "messaggio": "",
-      "data": "2026-11-14",
-      "ora": "15",
-      "minuti": "00",
-      "anticipo_min": 20,
       "ripeti": "mai",
       "etichetta": "Start in",
       "giorni": []
@@ -188,19 +201,6 @@
       "minuti": "10",
       "anticipo_min": 10,
       "ripeti": "ogni settimana",
-      "etichetta": "Start",
-      "giorni": []
-    },
-    {
-      "id": "15",
-      "attivo": false,
-      "titolo": "🏛  GLORY WAR  🏛",
-      "messaggio": "",
-      "data": "2026-11-17",
-      "ora": "21",
-      "minuti": "00",
-      "anticipo_min": 10,
-      "ripeti": "mai",
       "etichetta": "Start",
       "giorni": []
     },
