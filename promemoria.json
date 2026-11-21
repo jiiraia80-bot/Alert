@@ -89,7 +89,7 @@
     },
     {
       "id": "11",
-      "attivo": true,
+      "attivo": false,
       "titolo": "🏛  WAR ON THE CAPITAL  🏛",
       "messaggio": "",
       "data": "2026-11-21",
