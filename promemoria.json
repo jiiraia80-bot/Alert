@@ -102,10 +102,10 @@
     },
     {
       "id": "15",
-      "attivo": false,
+      "attivo": true,
       "titolo": "🏛  GLORY WAR  🏛",
       "messaggio": "",
-      "data": "2026-11-17",
+      "data": "2026-11-24",
       "ora": "21",
       "minuti": "00",
       "anticipo_min": 10,
