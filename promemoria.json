@@ -4,11 +4,11 @@
   "promemoria": [
     {
       "id": "1",
-      "attivo": false,
+      "attivo": true,
       "titolo": "⚠️ TYRANT! ⚠️",
       "messaggio": "",
-      "data": "2026-11-27",
-      "ora": "19",
+      "data": "2026-11-30",
+      "ora": "21",
       "minuti": "00",
       "anticipo_min": 10,
       "ripeti": "mai",
